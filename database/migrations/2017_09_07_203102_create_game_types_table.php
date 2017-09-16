@@ -20,6 +20,7 @@ class CreateGameTypesTable extends Migration
             $table->string('name')->unique();
             $table->unsignedTinyInteger('player_limit');
             $table->unsignedTinyInteger('score_limit');
+            $table->boolean('third_dice')->default(false);
         });
     }
 

@@ -9,5 +9,8 @@ class GameType extends Model
 {
     use ReturnsRandomRecord;
 
-    
+    public function hasThirdDice() : bool
+    {
+        return $this->third_dice;
+    }
 }
